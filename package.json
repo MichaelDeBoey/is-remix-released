@@ -1,0 +1,36 @@
+{
+  "name": "is-remix-released",
+  "version": "1.0.0",
+  "keywords": [
+    "remix",
+    "released"
+  ],
+  "author": "Michaël De Boey <info@michaeldeboey.be> (https://michaeldeboey.be)",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelDeBoey/is-remix-released"
+  },
+  "bugs": {
+    "url": "https://github.com/MichaelDeBoey/is-remix-released/issues"
+  },
+  "homepage": "http://is-remix-released.com",
+  "scripts": {
+    "build": "NODE_ENV=production npm run generate:css",
+    "generate:css": "postcss style.css -o style.generated.css",
+    "start": "npm run generate:css && serve"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^8.3.1",
+    "prettier": "2.4.1",
+    "serve": "^12.0.1",
+    "tailwindcss": "^2.2.16"
+  },
+  "browserslist": [
+    ">1%",
+    "not dead"
+  ]
+}
