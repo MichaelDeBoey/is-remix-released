@@ -15,19 +15,18 @@
   "bugs": {
     "url": "https://github.com/MichaelDeBoey/is-remix-released/issues"
   },
-  "homepage": "http://is-remix-released.com",
+  "homepage": "https://is-remix-released.com",
   "scripts": {
     "build": "NODE_ENV=production npm run generate:css",
     "generate:css": "postcss style.css -o style.generated.css",
     "start": "npm run generate:css && serve"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9",
-    "postcss-cli": "^8.3.1",
+    "autoprefixer": "^10.4.0",
+    "postcss-cli": "^9.0.2",
     "prettier": "2.4.1",
-    "serve": "^12.0.1",
-    "tailwindcss": "^2.2.16"
+    "serve": "^13.0.2",
+    "tailwindcss": "^2.2.19"
   },
   "browserslist": [
     ">1%",
